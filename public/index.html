@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      background-color: #222;
+    }
+
+    #build-output {
+      white-space: pre-wrap;
+      font-family: monospace;
+      color: #f1f1f1;
+      font-size: 12px;
+    }
+  </style>
+  <body>
+    <div id="build-output">No output yet.</div>
+  </body>
+  <script src="/jquery-2.1.1.min.js"></script>
+  <script>
+    var timer;
+
+    function updateOutput() {
+      $.get('/status', function(status) {
+        $('#build-output').html(status.output);
+
+        if (!status.active) {
+          clearInterval(timer);
+          timer = null;
+        }
+      });
+    };
+
+    timer = setInterval(updateOutput, 1000);
+  </script>
+</html>
