@@ -4,20 +4,36 @@ var AnsiToHtml = require('ansi-to-html'),
   path = require('path');
 
 var app = express(),
-  job = Job(),
+  job = null,
   ansiToHtml = new AnsiToHtml();
 
+function sendStatus(res, job, since) {
+  var status = {
+    active: job ? job.active : false,
+    output: job ? job.output.slice(since) : ''
+  }
+
+  res.json(status);
+}
+
 app.get('/', function(req, res) {
-  job.start();
-  res.sendfile('public/index.html');
+  var since = parseInt(req.query.since || '0', 10);
+
+  if (job && job.active && since === job.output.length) {
+    job.once('progress', function() {
+      sendStatus(res, job, since);
+    });
+  } else {
+    sendStatus(res, job, since);
+  }
 });
 
-app.get('/status', function(req, res) {
-  var status = {
-    active: job.active,
-    output: ansiToHtml.toHtml(job.currentOutput())
+app.post('/', function(req, res) {
+  if (!job || !job.active) {
+    job = new Job('/Users/briangreenery/Desktop/build');
   }
-  res.json(status);
+
+  res.end('ok');
 });
 
 app.use(express.static(path.join(__dirname, '/public')));

@@ -10,6 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "ansi-to-html": "^0.2.0",
-    "express": "^4.6.1"
+    "event-stream": "^3.1.7",
+    "express": "^4.6.1",
+    "js-yaml": "^3.1.0",
+    "q": "^1.0.1",
+    "request": "^2.37.0"
   }
 }
