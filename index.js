@@ -30,6 +30,7 @@ app.get('/', function(req, res) {
 
 app.post('/', function(req, res) {
   if (!job || !job.active) {
+    //job = new Job('C:\\build');
     job = new Job('/home/greenb/Desktop/build');
   }
 
