@@ -30,7 +30,7 @@ app.get('/', function(req, res) {
 
 app.post('/', function(req, res) {
   if (!job || !job.active) {
-    job = new Job('/Users/briangreenery/Desktop/build');
+    job = new Job('/home/greenb/Desktop/build');
   }
 
   res.end('ok');
