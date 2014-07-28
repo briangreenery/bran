@@ -26,7 +26,9 @@
     "request": "^2.37.0",
     "text-table": "^0.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "tape": "^2.13.4"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/briangreenery/bran.git"
