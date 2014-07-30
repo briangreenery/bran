@@ -24,7 +24,8 @@
     "q": "^1.0.1",
     "range-parser": "^1.0.0",
     "request": "^2.37.0",
-    "text-table": "^0.2.0"
+    "text-table": "^0.2.0",
+    "uuid": "^1.4.1"
   },
   "devDependencies": {
     "tape": "^2.13.4"
