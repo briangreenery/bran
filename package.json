@@ -1,7 +1,7 @@
 {
   "name": "bran",
   "version": "1.0.0",
-  "description": "A personal build server.",
+  "description": "A command line based build server.",
   "main": "index.js",
   "bin": "./bin/bran",
   "scripts": {
