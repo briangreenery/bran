@@ -2,6 +2,10 @@
 
 bran is a tool for building the same source code across multiple remote platforms.
 
+# Security Warning
+
+This tool is completely insecure. It currently uses unauthenticated HTTP to send commands to workers.
+
 ## Simple Usage
 
 ### On the "master" (a server that your client and all your workers can access):
