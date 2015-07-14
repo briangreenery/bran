@@ -1,0 +1,114 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/greenb/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/home/greenb/.npm/bran/1.0.4/package.tgz', '.' ]
+12 verbose tarball /home/greenb/.npm/bran/1.0.4/package.tgz
+13 verbose folder .
+14 info prepublish bran@1.0.4
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /home/greenb/.npm/1f1177db-tar.lock
+17 silly lockFile 8e56248f-reenb-npm-bran-1-0-4-package-tgz tar:///home/greenb/.npm/bran/1.0.4/package.tgz
+18 verbose lock tar:///home/greenb/.npm/bran/1.0.4/package.tgz /home/greenb/.npm/8e56248f-reenb-npm-bran-1-0-4-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 8e56248f-reenb-npm-bran-1-0-4-package-tgz tar:///home/greenb/.npm/bran/1.0.4/package.tgz
+22 silly lockFile 8e56248f-reenb-npm-bran-1-0-4-package-tgz tar:///home/greenb/.npm/bran/1.0.4/package.tgz
+23 silly lockFile 0d93caa7-me-greenb-npm-bran-1-0-4-package /home/greenb/.npm/bran/1.0.4/package
+24 verbose lock /home/greenb/.npm/bran/1.0.4/package /home/greenb/.npm/0d93caa7-me-greenb-npm-bran-1-0-4-package.lock
+25 silly lockFile 0d93caa7-me-greenb-npm-bran-1-0-4-package /home/greenb/.npm/bran/1.0.4/package
+26 silly lockFile 0d93caa7-me-greenb-npm-bran-1-0-4-package /home/greenb/.npm/bran/1.0.4/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'bran',
+29 silly publish   version: '1.0.4',
+29 silly publish   description: 'A command line based build server.',
+29 silly publish   main: 'index.js',
+29 silly publish   bin: { bran: './bin/bran.js' },
+29 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+29 silly publish   author: { name: 'Brian Green' },
+29 silly publish   license: 'Unlicense',
+29 silly publish   dependencies:
+29 silly publish    { backoff: '^2.4.0',
+29 silly publish      'body-parser': '^1.5.0',
+29 silly publish      colors: '^0.6.2',
+29 silly publish      commander: '^2.3.0',
+29 silly publish      'content-range': '^0.2.0',
+29 silly publish      'event-stream': '^3.1.7',
+29 silly publish      express: '^4.6.1',
+29 silly publish      'js-yaml': '^3.1.0',
+29 silly publish      mkdirp: '^0.5.0',
+29 silly publish      moment: '^2.7.0',
+29 silly publish      pushover: '^1.3.6',
+29 silly publish      q: '^1.0.1',
+29 silly publish      'range-parser': '^1.0.0',
+29 silly publish      request: '^2.37.0',
+29 silly publish      'text-table': '^0.2.0',
+29 silly publish      uuid: '^1.4.1' },
+29 silly publish   devDependencies: { tape: '^2.13.4' },
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'https://github.com/briangreenery/bran.git' },
+29 silly publish   keywords: [ 'build', 'continuous', 'integration' ],
+29 silly publish   bugs: { url: 'https://github.com/briangreenery/bran/issues' },
+29 silly publish   homepage: 'https://github.com/briangreenery/bran',
+29 silly publish   readme: 'This is a work in progress and shouldn\'t be used by anyone yet.\n',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: '292eb547c5f95af82e35b403bb495ee74ac52e31',
+29 silly publish   _id: 'bran@1.0.4',
+29 silly publish   _shasum: '31ddcfbf5ffd21c4b0466233e92358ebcc284766',
+29 silly publish   _from: '.' }
+30 verbose request where is /bran
+31 verbose request registry http://npm.sfolab.ibm.com/
+32 verbose request id 2785e31e85360f07
+33 verbose url raw /bran
+34 verbose url resolving [ 'http://npm.sfolab.ibm.com/', './bran' ]
+35 verbose url resolved http://npm.sfolab.ibm.com/bran
+36 verbose request where is http://npm.sfolab.ibm.com/bran
+37 info trying registry request attempt 1 at 15:50:40
+38 http PUT http://npm.sfolab.ibm.com/bran
+39 http 401 http://npm.sfolab.ibm.com/bran
+40 verbose headers { 'content-type': 'application/json; charset=utf-8',
+40 verbose headers   'x-registry': 'http://localhost:5984/registry/_design/app/_rewrite/',
+40 verbose headers   server: 'CouchDB/1.5.1 (Erlang OTP/R14B04)',
+40 verbose headers   'cache-control': 'no-cache',
+40 verbose headers   'content-encoding': 'gzip',
+40 verbose headers   vary: 'accept-encoding',
+40 verbose headers   date: 'Fri, 06 Mar 2015 23:48:09 GMT',
+40 verbose headers   connection: 'keep-alive',
+40 verbose headers   'transfer-encoding': 'chunked' }
+41 error publish Failed PUT 401
+42 error Error: unauthorized Name or password is incorrect.: bran
+42 error     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+42 error     at /usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:251:7
+42 error     at Gunzip.onEnd (zlib.js:167:5)
+42 error     at Gunzip.emit (events.js:117:20)
+42 error     at _stream_readable.js:944:16
+42 error     at process._tickCallback (node.js:442:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Linux 3.13.0-46-generic
+45 error command "/usr/bin/node" "/usr/bin/npm" "publish"
+46 error cwd /home/greenb/Projects/bran
+47 error node -v v0.10.36
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]
